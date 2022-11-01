@@ -21,21 +21,21 @@ class Student(Person):
     def __init__(self, firstName, lastName, idNumber, scores):
         self.firstName = firstName
         self.lastName = lastName
-        self.idNum = idNum
+        self.idNumber = idNumber
         self.scores = scores
     
     def printPerson(self):
-        print("Name: " + lastName + ", " + firstName)
-        print("ID:", idNum)
+        print("Name: " + self.lastName + ", " + self.firstName)
+        print("ID:", self.idNumber)
     
 
     #   Function Name: calculate
     #   Return: A character denoting the grade.
     def calculate(self):
-        x = len(scores)
+        x = len(self.scores)
         n = 0
         for i in range(x):
-            n+=scores[i]
+            n+=self.scores[i]
         
         y = int(n)//int(x)
 
